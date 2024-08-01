@@ -1,63 +1,3 @@
-/**ESTO ES UN COMENTARIO EN CSS*/
-/*----------fuentes-------------*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Unbounded:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
-/*?ESTA ETIQUETA AFECTA A TODOS LOS ELEMENTOS*/
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: "Unbounded", sans-serif;
-}
-/*!HEADER*/
-header {
-    background-color: darkslateblue;
-    padding: 10px;
-    position: sticky;
-    top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    z-index: 3;
-}
-header h1 {
-    font-family: "Unbounded", sans-serif;
-    color: white;
-    font-size: 80;
-    letter-spacing: 2px;
-}
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-header nav ul li a {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: medium;
-    font-style: normal;
-    text-decoration: none;
-}
-header nav ul li a:hover {
-    color: blueviolet;
-    transition: 300ms;
-}
-/*!MAIN*/
-body {
-    background-image:url(../img/astral.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.linkedhome {
-    color: white;
-    background-color: darkslateblue;
-    text-decoration: none;
-    font-size: 50;
-}
 h1 {
     padding: 10px;
     color: white;
@@ -84,16 +24,18 @@ h3 {
     text-align: justify;
     padding: 10px;
 }
+.flex-redes {
+    a {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
 .redes {
     width: 36px;
     height: 36px;
     padding: 20px;
     filter: invert(1);
-}
-.flex-redes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 .banners {
     width: 250px;
@@ -208,28 +150,4 @@ p {
 .adidas-shop {
     width: 500px;
     height: 800px;
-}
-/*!FOOTER*/
-footer {
-    margin-bottom: 0px;
-}
-.flex-container {
-    background-color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-.sponsors {
-    width: 250px;
-    height: 250px;
-}
-
-@media (max-width: 770px) {
-    /* Estilos para pantallas con un ancho máximo de 770px */
-    .sponsors{
-        width: 150px;
-        height: 150px;
-    }
 }

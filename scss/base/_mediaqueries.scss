@@ -4,3 +4,16 @@
         height: 150px;
     }
 }
+@media (max-width: 400px) {
+    header nav ul{
+        width: 50%;
+        display: inline-block;
+    }
+}
+@media (max-width: 400px) {
+    p {
+        justify-content: space-between;
+        margin: 0%;
+        text-align: justify;
+    }
+}

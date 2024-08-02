@@ -2,14 +2,17 @@
 /*----------fuentes-------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Unbounded:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+
 /*?ESTA ETIQUETA AFECTA A TODOS LOS ELEMENTOS*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Unbounded", sans-serif;
 }
+
 /*!HEADER*/
 header {
     background-color: rgb(72, 61, 139);
@@ -21,17 +24,20 @@ header {
     justify-content: space-evenly;
     z-index: 3;
 }
+
 header h1 {
     font-family: "Unbounded", sans-serif;
     color: white;
     font-size: 80;
     letter-spacing: 2px;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
+
 header nav ul li a {
     color: white;
     font-family: "Roboto", sans-serif;
@@ -40,31 +46,36 @@ header nav ul li a {
     font-style: normal;
     text-decoration: none;
 }
+
 header nav ul li a:hover {
     color: blueviolet;
     transition: 300ms;
 }
+
 /*!MAIN*/
 body {
-    background-image:url(../img/astral.jpg);
+    background-image: url(../img/astral.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+
 .linkedhome {
     color: white;
     background-color: darkslateblue;
     text-decoration: none;
     font-size: 50;
 }
+
 h1 {
     padding: 10px;
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
 }
-h2 { 
+
+h2 {
     color: white;
     font-family: "Unbounded", sans-serif;
     text-decoration: none;
@@ -74,6 +85,7 @@ h2 {
     letter-spacing: 1px;
     z-index: 2;
 }
+
 h3 {
     color: white;
     background-color: rgba(0, 0, 0, 0.500);
@@ -84,22 +96,26 @@ h3 {
     text-align: justify;
     padding: 10px;
 }
+
 .redes {
     width: 36px;
     height: 36px;
     padding: 20px;
     filter: invert(1);
 }
+
 .flex-redes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .banners {
     width: 250px;
     height: 150px;
     filter: grayscale(1);
 }
+
 p {
     color: white;
     background-color: rgba(0, 0, 0, 0.500);
@@ -110,6 +126,7 @@ p {
     margin-right: 50%;
     padding: 10px;
 }
+
 .form {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.500);
@@ -119,8 +136,17 @@ p {
     text-decoration: none;
     text-align: justify;
     padding: 10px;
-    font-size: 24;  
+    font-size: 24;
 }
+
+.grid-form {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1fr, 2fr);
+    grid-auto-rows: auto;
+}
+
 .nosotros {
     padding: 10px;
     text-align: left;
@@ -128,36 +154,42 @@ p {
     word-spacing: 5px;
     line-height: 30px;
 }
-.grid-nos{ 
+
+.grid-nos {
     width: 100%;
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2fr);
     grid-auto-rows: 500px;
 }
+
 .grid-nos div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .grid-galeria {
     width: 95%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px;
     gap: 25px;
 }
+
 .grid-galeria div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .grid-item {
     position: relative;
 }
+
 .grid-item h2 {
     position: absolute;
     bottom: 0;
@@ -167,52 +199,59 @@ p {
 }
 
 .calendar {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	font-family: "Unbounded", sans-serif;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: "Unbounded", sans-serif;
     color: white;
 }
+
 .calendar-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	flex-wrap: wrap;
-	list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    list-style: none;
 }
+
 .calendar-grid li {
-        display: flex;
-        width: 10rem;
-        height: 10rem;
-        margin: 0.25rem;
-        flex-flow: column;
-        border-radius: 0.2rem;
-        padding: 1rem;
-        font-weight: 400;
-        font-size: normal;
-        box-sizing: border-box;
-        box-shadow: 0 8px 32px 0 darkslateblue;
-        backdrop-filter: blur(2px);
-        border-radius: 8px;
-        border: 1px solid rgba(3, 3, 3, 0.479);
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    margin: 0.25rem;
+    flex-flow: column;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: normal;
+    box-sizing: border-box;
+    box-shadow: 0 8px 32px 0 darkslateblue;
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    border: 1px solid rgba(3, 3, 3, 0.479);
 }
+
 .time {
-	font-size: 2rem;
-	margin: 0 0 1rem 0;
-	font-weight: 500;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    font-weight: 500;
 }
+
 .today {
     color: blueviolet;
     font-weight: 400;
     font-size: normal;
-		}
+}
+
 .adidas-shop {
     width: 500px;
     height: 800px;
 }
+
 /*!FOOTER*/
 footer {
     margin-bottom: 0px;
 }
+
 .flex-container {
     background-color: white;
     padding: 10px;
@@ -221,19 +260,35 @@ footer {
     flex-wrap: wrap;
 
 }
+
 .sponsors {
     width: 250px;
     height: 250px;
     transition: 1s;
 }
+
 .sponsors:hover {
     transform: scale(1.25);
 }
 
 @media (max-width: 770px) {
+
     /* Estilos para pantallas con un ancho máximo de 770px */
-    .sponsors{
+    .sponsors {
         width: 150px;
         height: 150px;
+    }
+}
+@media (max-width: 400px) {
+    header nav ul{
+        width: 50%;
+        display: inline-block;
+    }
+}
+@media (max-width: 400px) {
+    p {
+        justify-content: space-between;
+        margin: 0%;
+        text-align: justify;
     }
 }

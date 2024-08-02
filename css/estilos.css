@@ -21,25 +21,31 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   z-index: 3; }
-  header h1 {
-    font-family: "Unbounded", sans-serif;
-    color: white;
-    font-size: 80;
-    letter-spacing: 2px; }
-  header ul {
+  header nav {
     list-style: none;
     display: flex;
     justify-content: space-between; }
-    header ul li a {
-      color: white;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      font-size: medium;
-      font-style: normal;
-      text-decoration: none; }
-      header ul li a:hover {
-        color: blueviolet;
-        transition: 300ms; }
+
+h1 {
+  font-family: "Unbounded", sans-serif;
+  color: white;
+  font-size: 80;
+  letter-spacing: 2px; }
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+  ul li a {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    font-style: normal;
+    text-decoration: none; }
+    ul li a:hover {
+      color: blueviolet;
+      transition: 300ms; }
 
 h1 {
   padding: 10px;
@@ -103,6 +109,13 @@ p {
   text-align: justify;
   padding: 10px;
   font-size: 24; }
+
+.grid-form {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(1fr, 2fr);
+  grid-auto-rows: auto; }
 
 .nosotros {
   padding: 10px;
@@ -187,6 +200,9 @@ p {
   font-weight: 400;
   font-size: normal; }
 
+.today-zoom {
+  transform: scale(1.2); }
+
 .adidas-shop {
   width: 500px;
   height: 800px; }
@@ -209,3 +225,14 @@ footer {
   .sponsors {
     width: 150px;
     height: 150px; } }
+
+@media (max-width: 400px) {
+  header nav ul {
+    width: 50%;
+    display: inline-block; } }
+
+@media (max-width: 400px) {
+  p {
+    justify-content: space-between;
+    margin: 0%;
+    text-align: justify; } }

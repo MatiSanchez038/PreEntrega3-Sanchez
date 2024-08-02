@@ -240,8 +240,12 @@ p {
     color: blueviolet;
     font-weight: 400;
     font-size: normal;
+    transition: 1s;
+    z-index: 2;
 }
-
+.today-zoom {
+    transform: scale(1.2)
+}
 .adidas-shop {
     width: 500px;
     height: 800px;

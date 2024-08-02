@@ -224,6 +224,10 @@ footer {
 .sponsors {
     width: 250px;
     height: 250px;
+    transition: 1s;
+}
+.sponsors:hover {
+    transform: scale(1.25);
 }
 
 @media (max-width: 770px) {

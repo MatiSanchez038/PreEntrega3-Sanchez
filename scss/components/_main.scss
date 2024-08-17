@@ -26,22 +26,20 @@ h3 {
     text-align: justify;
     padding: 10px;
 }
-
-.flex-redes {
-    a {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
 .redes {
-    width: 36px;
-    height: 36px;
+    width: 48px;
+    height: 48px;
     padding: 20px;
     filter: invert(1);
 }
 
+.flex-redes {
+    a {
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+}
 .banners {
     width: 250px;
     height: 150px;

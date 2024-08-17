@@ -8,7 +8,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  z-index: 0; }
 
 body {
   font-family: "Unbounded", sans-serif; }
@@ -74,16 +75,16 @@ h3 {
   text-align: justify;
   padding: 10px; }
 
+.redes {
+  width: 48px;
+  height: 48px;
+  padding: 20px;
+  filter: invert(1); }
+
 .flex-redes a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-
-.redes {
-  width: 36px;
-  height: 36px;
-  padding: 20px;
-  filter: invert(1); }
 
 .banners {
   width: 250px;

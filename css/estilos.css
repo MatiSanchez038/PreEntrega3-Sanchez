@@ -133,11 +133,6 @@ p {
   grid-template-columns: repeat(2fr);
   grid-auto-rows: 500px; }
 
-.grid-nos div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
 .grid-galeria {
   width: 95%;
   margin: auto;
@@ -147,11 +142,6 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 200px;
   gap: 25px; }
-
-.grid-galeria div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
 
 .grid-item {
   position: relative; }
@@ -208,6 +198,11 @@ p {
 .adidas-shop {
   width: 500px;
   height: 800px; }
+
+.grid-nos div img, .grid-galeria div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 footer {
   margin-bottom: 0px; }
